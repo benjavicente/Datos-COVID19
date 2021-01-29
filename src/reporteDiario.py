@@ -111,7 +111,7 @@ def prod5(fte, producto):
                                   'Fallecidos totales': 'Fallecidos'}, inplace=True)
 
     # print(timestamp)
-    last_row = df_input_file[df_input_file['Fecha'] == timestamp]
+    last_row = df_input_file[df_input_file['Fecha'] == df_input_file['Fecha'].max()]
     # print(last_row.to_string())
 
     df_output_file = pd.read_csv(producto)
