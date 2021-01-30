@@ -12,12 +12,10 @@ files=(
     informeEpidemiologico.py
 )
 
-for f in "${files[@]}"
-do
+for f in "${files[@]}"; do
     printf "Running ${f}...\n"
     python $f
-    if [ ! "$?" -eq 0 ];
-    then
+    if [ ! "$?" -eq 0 ]; then
         printf "\nError in ${f}\n\n\n"
     fi
 done

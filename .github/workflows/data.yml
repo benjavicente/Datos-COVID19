@@ -12,7 +12,7 @@ jobs:
         with:
           path: clone
   
-      - name: Get oficial repository
+      - name: Get official repository
         uses: actions/checkout@v2
         with:
           repository: MinCiencia/Datos-COVID19
@@ -28,6 +28,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd clone
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
