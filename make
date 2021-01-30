@@ -3,7 +3,7 @@
 cd src
 
 files=(
-    reporteDiari.py
+    reporteDiario.py
     Curvas_epi.py
     nuevaDefDefunciones.py
     paso_a_paso.py

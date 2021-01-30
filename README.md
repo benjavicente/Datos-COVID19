@@ -1,9 +1,15 @@
-# Repositorio no oficial de COVID19
+# Repositorio datos COVID19
 
-![.github/workflows/data.yml][status_badge]
+| Schedule | Dispatch |
+| :------: | :------: |
+| ![][s]   | ![][d]   |
 
-- Copia los archivos de input del repositorio [oficial]
-- Corre las acciones que no necesitan secretos en una sola acción
+---
+
+- Copia los archivos de input del [repositorio oficial del Ministerio
+  de Ciencia, Tecnología, Conocimiento, e Innovación][oficial].
+- Corre las acciones que no necesitan secretos en una sola acción en
+  menos de 5 minutos cada día a las 13:30 horas de Santiago, Chile.
 
 
 ## Set-Up
@@ -39,6 +45,18 @@ bash make
 ```
 
 
+## Licencia
+
+Grán parte de este repositório fué elaborado por el Ministeriode
+Ciencia, Tecnología, Conocimiento, e Innovación de Chile. El
+repositorio oficial se encuentra en github.com/MinCiencia/Datos-COVID19,
+y se encuantra en www.minciencia.gob.cl/sites/default/files/1771596.pdf.
+
+Este repositorio se encuentra con licencia MIT. 
+
+
 
 [oficial]: https://github.com/MinCiencia/Datos-COVID19
-[status_badge]: https://github.com/benjavicente/Datos-COVID19/workflows/.github/workflows/data.yml/badge.svg
+[d]: https://github.com/benjavicente/Datos-COVID19/workflows/.github/workflows/data.yml/badge.svg?event=workflow_dispatch
+[s]: https://github.com/benjavicente/Datos-COVID19/workflows/.github/workflows/data.yml/badge.svg?event=schedule
+
