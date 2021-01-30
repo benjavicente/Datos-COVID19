@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd src
-
 files=(
     reporteDiario.py
     Curvas_epi.py

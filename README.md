@@ -8,8 +8,8 @@
 
 - Copia los archivos de input del [repositorio oficial del Ministerio
   de Ciencia, Tecnología, Conocimiento, e Innovación][oficial].
-- Corre las acciones que no necesitan secretos en una sola acción en
-  menos de 5 minutos cada día a las 13:30 horas de Santiago, Chile.
+- Corre las acciones que no necesitan secretos en una sola acción
+  cada día a las 13:30 horas de Santiago, Chile.
 
 
 ## Set-Up
@@ -41,6 +41,7 @@ cp official/input . -r -f
 ### Output
 
 ```bash
+cd src
 bash make
 ```
 

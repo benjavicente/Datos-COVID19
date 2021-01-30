@@ -34,7 +34,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Generate Products
-        run: cd clone; bash make
+        run: cd clone; bash src/make
 
       - name: Save files
         run: |
