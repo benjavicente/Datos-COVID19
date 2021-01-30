@@ -24,7 +24,7 @@ jobs:
         run: cp official/input clone/input -r -f
 
       - name: Save input
-      - run: |
+        run: |
           cd clone
           git config user.name github-actions
           git config user.email github-actions@github.com
