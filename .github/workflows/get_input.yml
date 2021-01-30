@@ -1,0 +1,33 @@
+# Obtiene los datos del repo oficial
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 16 * * *"
+
+jobs:
+  get_data:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Get this repository
+        uses: actions/checkout@v2
+        with:
+          path: clone
+  
+      - name: Get oficial repository
+        uses: actions/checkout@v2
+        with:
+          repository: MinCiencia/Datos-COVID19
+          path: official
+
+      - name: Copy input files
+        run: cp official/input clone/input -r -f
+
+      - name: Save input
+      - run: |
+          cd clone
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "updated input files"
+          git push

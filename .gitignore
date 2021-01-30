@@ -6,6 +6,5 @@ temp*
 __pycache__
 *.tmp
 .venv-*
-*.yml
 .env
 .vscode
