@@ -1,0 +1,4 @@
+#!/bin/bash
+
+printf -v date '%(%Y-%m-%d)T\n' -1
+curl "https://www.minsal.cl/nuevo-coronavirus-2019-ncov/casos-confirmados-en-chile-covid-19/" -o "input/report/${date}.html"

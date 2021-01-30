@@ -68,6 +68,6 @@ Este repositorio se encuentra con licencia MIT.
 
 
 [oficial]: https://github.com/MinCiencia/Datos-COVID19
-[d]: https://github.com/benjavicente/Datos-COVID19/workflows/.github/workflows/data.yml/badge.svg?event=workflow_dispatch
-[s]: https://github.com/benjavicente/Datos-COVID19/workflows/.github/workflows/data.yml/badge.svg?event=schedule
+[d]: https://github.com/benjavicente/Datos-COVID19/workflows/Update/badge.svg?event=workflow_dispatch
+[s]: https://github.com/benjavicente/Datos-COVID19/workflows/Update/badge.svg?event=schedule
 [action]: .github/workflows/data.yml

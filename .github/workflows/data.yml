@@ -1,7 +1,7 @@
 on:
   workflow_dispatch:
   schedule:
-    # GMT-3
+    # GMT-3, 20:30 in Chile
     - cron: "30 23 * * *"
 
 name: Update
@@ -29,6 +29,9 @@ jobs:
         with:
             python-version: 3.7
 
+      - name: Save minsal daily report HTML
+        run: cd clone; bash get_report
+
       - name: Install dependencies
         run: |
           cd clone
@@ -36,7 +39,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Generate Products
-        run: cd clone; bash src/make
+        run: cd clone/src; bash make_output
 
       - name: Save files
         run: |
