@@ -2,7 +2,9 @@ on:
   workflow_dispatch:
   schedule:
     # GMT-3
-    - cron: "30 16 * * *"
+    - cron: "30 23 * * *"
+
+name: Update
 
 jobs:
   get_data:
