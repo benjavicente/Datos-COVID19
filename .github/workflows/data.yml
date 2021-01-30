@@ -1,5 +1,3 @@
-# Obtiene los datos del repo oficial
-
 on:
   workflow_dispatch:
   schedule:
@@ -21,9 +19,22 @@ jobs:
           path: official
 
       - name: Copy input files
-        run: cp official/input clone/input -r -f
+        run: cp official/input clone -r -f
 
-      - name: Save input
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+            python-version: 3.7
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate Products
+        run: cd clone; bash make
+
+      - name: Save files
         run: |
           cd clone
           git config user.name github-actions
