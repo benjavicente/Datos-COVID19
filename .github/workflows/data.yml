@@ -30,7 +30,7 @@ jobs:
             python-version: 3.7
 
       - name: Save minsal daily report HTML
-        run: cd clone; bash get_report
+        run: cd clone; bash src/get_report
 
       - name: Install dependencies
         run: |
